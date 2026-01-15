@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample HTML Page</title>
+    <title>Nayo's Portofolio</title>
 
     <!-- CSS External -->
     <link rel="stylesheet" href="CSS/style.css">
@@ -11,10 +11,77 @@
 
 <body>
     <!-- Header content -->
-    <header></header>
+    <header class="main-header p-[8px]"> 
+        <div class="logo"></div>
+
+        <nav class="flex">
+            <a class="border p-2 rounded" href="#home-page">Home</a>
+            <a class="border p-2 rounded" href="#portfolio-page">Portfolio</a>
+            <a class="border p-2 rounded" href="#profile-page">Our Profile</a>
+            <a class="border p-2 rounded" href="#message-me-page">Message Me</a>
+        </nav>    
+        
+        <!-- Tailwind CSS CDN -->
+          <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    </header>
+
+    <hr/>
 
     <!-- Main content -->
-    <main></main>
+    <main>
+        <!-- home -->
+        <section id="home-page" class="mx-[8px] min-h-[500px] text-center content-center">
+            <h2 class="text-xl font-bold" id="welcome-speech">Welcome to Nayo's Portofolio</h2>
+            <p class="mt-2">Discover my projects and skills!</p>
+        </section>
+
+        <hr/>
+
+        <!-- portfolio -->
+        <section id="portfolio-page" class="mx-[8px] min-h-[500px] text-center content-center">
+            <h2 class="text-xl font-bold" id="portfolio-speech">My Portfolio</h2>
+            <p class="mt-2">Here are some of my recent works.</p>
+        </section>
+        
+        <hr/>
+
+        <!-- our profile -->
+        <section id="profile-page" class="min-h-[500px] text-center content-center">
+            <h2 class="text-xl font-bold" id="profile-speech">Our Profile</h2>
+            <p class="mt-2">Learn more about me and my background.</p>
+        </section>
+
+        <hr/>
+
+        <!-- message us -->
+        <section id="message-me-page" class="my-4 mx-[8px] min-h-[500px]">
+            <header class="mx-[8px]">
+                <h2 class="text-xl font-bold" id="message-speech">Leave a Message</h2>
+                <p class="mt-2">Have a question or want to work together? Send me a message!</p>
+            </header>
+
+            <form class="mx-[8px] mt-4 flex flex-col" id="message-form">
+                <!-- NAME -->
+                <div class="mb-4">
+                    <label class="block mb-2" for="name">Name:</label>
+                    <input type="text" id="name" name="name" class="border rounded w-full" required>
+                </div>
+                <!-- EMAIL -->
+                <div class="mb-4">
+                    <label for="email" class="block mb-2">Email:</label>
+                    <input type="email" id="email" name="email" class="border rounded w-full" required>
+                </div>
+                <!-- MESSAGE -->
+                <div class="mb-4">
+                    <label for="message" class="block mb-2">Message:</label>
+                    <textarea id="message" name="message" rows="4" class="border rounded w-full" required></textarea>
+                </div>
+                <!-- SUBMIT BUTTON -->
+              <button type="button" class="px-4 py-2 bg-blue-500 text-white rounded w-35">Send Message</button>
+            </form>
+        </section>
+
+    </main>
 
     <!-- Footer content -->
     <footer></footer>

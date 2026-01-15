@@ -1,0 +1,14 @@
+.logo {
+    width: 75px;
+    height: 75px;
+    background-color: yellow;
+    border-radius: 50%;
+    background-image: url('https://i.pinimg.com/736x/eb/74/3e/eb743eb4e00c3593fda16dbb156000f8.jpg');
+    background-size: cover;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
